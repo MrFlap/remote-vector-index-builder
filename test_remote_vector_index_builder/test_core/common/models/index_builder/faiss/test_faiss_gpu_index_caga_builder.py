@@ -71,8 +71,8 @@ class TestFaissGPUIndexCagraBuilder:
         return builder
 
     def test_default_initialization(self, default_builder):
-        assert default_builder.intermediate_graph_degree == 64
-        assert default_builder.graph_degree == 32
+        assert default_builder.intermediate_graph_degree == 128
+        assert default_builder.graph_degree == 64
         assert default_builder.graph_build_algo == CagraGraphBuildAlgo.IVF_PQ
         assert default_builder.store_dataset is False
         assert default_builder.refine_rate == 1.0

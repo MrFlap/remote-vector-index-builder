@@ -222,8 +222,8 @@ class MockGpuIndexCagraConfig:
     """Mock class for faiss.GpuIndexCagraConfig"""
 
     def __init__(self):
-        self.intermediate_graph_degree = 64
-        self.graph_degree = 32
+        self.intermediate_graph_degree = 128
+        self.graph_degree = 64
         self.store_dataset = False
         self.device = 0
         self.refine_rate = 2.0

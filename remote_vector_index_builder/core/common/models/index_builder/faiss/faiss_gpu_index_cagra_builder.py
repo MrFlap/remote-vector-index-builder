@@ -33,9 +33,9 @@ class FaissGPUIndexCagraBuilder(FaissGPUIndexBuilder):
     """
 
     # Degree of input graph for pruning
-    intermediate_graph_degree: int = 64
+    intermediate_graph_degree: int = 128
     # Degree of output graph
-    graph_degree: int = 32
+    graph_degree: int = 64
     # ANN Algorithm to build the knn graph
     graph_build_algo: CagraGraphBuildAlgo = CagraGraphBuildAlgo.IVF_PQ
 
